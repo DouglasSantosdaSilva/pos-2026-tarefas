@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+
+<cardapio>
+    <prato id="p001">
+        <nome>Frango à Parmegiana</nome>
+        <descricao>Peito de frango empanado e frito, coberto com molho de tomate e queijo derretido.</descricao>
+        <ingredientes>
+            <ingrediente>Peito de frango</ingrediente>
+            <ingrediente>Farinha de trigo</ingrediente>
+            <ingrediente>Farinha de rosca</ingrediente>
+            <ingrediente>Ovos</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Queijo parmesão</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 40,00</preco>
+        <calorias>750 kcal</calorias>
+        <tempoPreparo>30 minutos</tempoPreparo>
+    </prato>
+    <prato id="p002">
+        <nome>Lasanha de Frango</nome>
+        <descricao>Camadas de massa fresca com frango desfiado cremoso e molho branco.</descricao>
+        <ingredientes>
+            <ingrediente>Massa de lasanha</ingrediente>
+            <ingrediente>Peito de frango desfiado</ingrediente>
+            <ingrediente>Molho branco (bechamel)</ingrediente>
+            <ingrediente>Milho verde</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Requeijão cremoso</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">&reais; 35,00</preco>
+        <calorias>880 kcal</calorias>
+        <tempoPreparo>50 minutos</tempoPreparo>
+    </prato>
+</cardapio>
