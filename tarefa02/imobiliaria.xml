@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imobiliaria [
+    <!ELEMENT imobiliaria (imovel+)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+    <!ELEMENT descricao (#PCDATA)>
+    <!ELEMENT proprietario (nome, (email | telefone)+)>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+    <!ELEMENT endereco (rua, bairro, cidade, numero?)>
+    <!ELEMENT rua (#PCDATA)>
+    <!ELEMENT bairro (#PCDATA)>
+    <!ELEMENT cidade (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+    <!ELEMENT tamanho (#PCDATA)>
+    <!ELEMENT numQuartos (#PCDATA)>
+    <!ELEMENT numBanheiros (#PCDATA)>
+    
+    <!ELEMENT valor (#PCDATA)>
+]>
+
+<imobiliaria>
+    <imovel>
+        <descricao>Apartamento ventilado com armarios e area de servico no Tirol</descricao>
+        <proprietario>
+            <nome>Ricardo Fonseca</nome>
+            <email>contato@fonsecaimoveis.com.br</email>
+            <telefone>84999887766</telefone>
+            <telefone>8432221100</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Pastor Jeronimo Gueiros</rua>
+            <bairro>Tirol</bairro>
+            <cidade>Natal</cidade>
+            <numero>124</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>124m</tamanho>
+            <numQuartos>3</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>395000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Edificio Galiza - Unidade funcional e central</descricao>
+        <proprietario>
+            <nome>Luciana Medeiros</nome>
+            <telefone>84988775544</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Perito Jose Lourenco</rua>
+            <bairro>Lagoa Nova</bairro>
+            <cidade>Natal</cidade>
+            <numero>474</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>54m</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>474900</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Lote amplo em regiao central de expansao</descricao>
+        <proprietario>
+            <nome>Marcos Lotes LTDA</nome>
+            <email>vendas@marcoslotes.com</email>
+        </proprietario>
+        <endereco>
+            <rua>Estrada de Acesso Central</rua>
+            <bairro>Centro</bairro>
+            <cidade>Extremoz</cidade>
+            </endereco>
+        <caracteristicas>
+            <tamanho>800m</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>80000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Natal Spot - Studio moderno proximo a praia</descricao>
+        <proprietario>
+            <nome>Construtora RN</nome>
+            <email>sac@construtorarn.com.br</email>
+            <telefone>8430004000</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Avenida Engenheiro Roberto Freire</rua>
+            <bairro>Ponta Negra</bairro>
+            <cidade>Natal</cidade>
+            <numero>229</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>31m</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>229217</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Edificio CTC - Salas comerciais mobiliadas</descricao>
+        <proprietario>
+            <nome>Pedro Adm de Bens</nome>
+            <telefone>84955551111</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Jaguarari</rua>
+            <bairro>Lagoa Nova</bairro>
+            <cidade>Natal</cidade>
+            <numero>300</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>300m</tamanho>
+            <numQuartos>0</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>900000</valor>
+    </imovel>
+</imobiliaria>
