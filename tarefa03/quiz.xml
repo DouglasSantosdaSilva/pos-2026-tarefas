@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+
+<quiz>
+    <questao id="q1">
+        <pergunta>Qual é a verdadeira identidade da fofoqueira Lady Whistledown?</pergunta>
+        <alternativa id="A">Eloise Bridgerton</alternativa>
+        <alternativa id="B">Cressida Cowper</alternativa>
+        <alternativa id="C">Penelope Featherington</alternativa>
+        <alternativa id="D">Genevieve Delacroix</alternativa>
+        <resposta>C</resposta>
+    </questao>
+
+    <questao id="q2">
+        <pergunta>Os nomes dos oito irmãos Bridgerton seguem qual ordem específica?</pergunta>
+        <alternativa id="A">Ordem de nascimento por gênero</alternativa>
+        <alternativa id="B">Ordem alfabética (A até H)</alternativa>
+        <alternativa id="C">Ordem de preferência da Viscondessa</alternativa>
+        <alternativa id="D">Nomes de reis e rainhas da Inglaterra</alternativa>
+        <resposta>B</resposta>
+    </questao>
+
+    <questao id="q3">
+        <pergunta>Qual é o título de nobreza de Anthony, o irmão mais velho da família?</pergunta>
+        <alternativa id="A">Duque</alternativa>
+        <alternativa id="B">Barão</alternativa>
+        <alternativa id="C">Conde</alternativa>
+        <alternativa id="D">Visconde</alternativa>
+        <resposta>D</resposta>
+    </questao>
+
+    <questao id="q4">
+        <pergunta>Na primeira temporada, por que Simon Basset, o Duque de Hastings, não queria ter filhos?</pergunta>
+        <alternativa id="A">Por uma promessa de vingança feita ao pai no leito de morte</alternativa>
+        <alternativa id="B">Por medo de transmitir uma doença genética</alternativa>
+        <alternativa id="C">Porque ele odiava crianças</alternativa>
+        <alternativa id="D">Para não perder sua herança e fortuna</alternativa>
+        <resposta>A</resposta>
+    </questao>
+
+    <questao id="q5">
+        <pergunta>Diferente de suas contemporâneas, qual é o principal objetivo de Eloise Bridgerton na sociedade?</pergunta>
+        <alternativa id="A">Tornar-se a nova Diamante da temporada</alternativa>
+        <alternativa id="B">Casar-se com um príncipe estrangeiro</alternativa>
+        <alternativa id="C">Estudar, ler e conquistar independência feminina</alternativa>
+        <alternativa id="D">Abrir sua própria casa de modas</alternativa>
+        <resposta>C</resposta>
+    </questao>
+</quiz>

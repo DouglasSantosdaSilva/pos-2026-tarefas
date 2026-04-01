@@ -1,0 +1,7 @@
+<!ELEMENT quiz (questao+)>
+<!ELEMENT questao (pergunta, alternativa+, resposta)>
+<!ATTLIST questao id ID #REQUIRED>
+<!ELEMENT pergunta (#PCDATA)>
+<!ELEMENT alternativa (#PCDATA)>
+<!ATTLIST alternativa id (A|B|C|D) #REQUIRED>
+<!ELEMENT resposta (#PCDATA)>
