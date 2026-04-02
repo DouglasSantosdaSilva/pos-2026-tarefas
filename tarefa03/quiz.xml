@@ -1,49 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE quiz SYSTEM "quiz.dtd">
 
-<quiz>
-    <questao id="q1">
-        <pergunta>Qual é a verdadeira identidade da fofoqueira Lady Whistledown?</pergunta>
-        <alternativa id="A">Eloise Bridgerton</alternativa>
-        <alternativa id="B">Cressida Cowper</alternativa>
-        <alternativa id="C">Penelope Featherington</alternativa>
-        <alternativa id="D">Genevieve Delacroix</alternativa>
-        <resposta>C</resposta>
-    </questao>
+<quiz versao="1">
+    <disciplina>História da Nobreza Inglesa (Série Bridgerton)</disciplina>
+    <professor>
+        <nome>Lady Whistledown</nome>
+        <matrícula>0012022</matrícula>
+    </professor>
+    <turma>Temporada de 1813</turma>
+    <data>01/04/2026</data>
+    
+    <questões>
+        <questão>
+            <enunciado>Quem é a verdadeira identidade por trás do pseudônimo Lady Whistledown?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Eloise Bridgerton</alternativa>
+                <alternativa correta="nao">Cressida Cowper</alternativa>
+                <alternativa correta="sim">Penelope Featherington</alternativa>
+                <alternativa correta="nao">Genevieve Delacroix</alternativa>
+            </alternativas>
+        </questão>
 
-    <questao id="q2">
-        <pergunta>Os nomes dos oito irmãos Bridgerton seguem qual ordem específica?</pergunta>
-        <alternativa id="A">Ordem de nascimento por gênero</alternativa>
-        <alternativa id="B">Ordem alfabética (A até H)</alternativa>
-        <alternativa id="C">Ordem de preferência da Viscondessa</alternativa>
-        <alternativa id="D">Nomes de reis e rainhas da Inglaterra</alternativa>
-        <resposta>B</resposta>
-    </questao>
+        <questão>
+            <enunciado>Qual é o título de Simon Basset, o protagonista da primeira temporada?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Visconde de Bridgerton</alternativa>
+                <alternativa correta="sim">Duque de Hastings</alternativa>
+                <alternativa correta="nao">Conde de Dorset</alternativa>
+                <alternativa correta="nao">Barão de Featherington</alternativa>
+            </alternativas>
+        </questão>
 
-    <questao id="q3">
-        <pergunta>Qual é o título de nobreza de Anthony, o irmão mais velho da família?</pergunta>
-        <alternativa id="A">Duque</alternativa>
-        <alternativa id="B">Barão</alternativa>
-        <alternativa id="C">Conde</alternativa>
-        <alternativa id="D">Visconde</alternativa>
-        <resposta>D</resposta>
-    </questao>
+        <questão>
+            <enunciado>Qual flor é o símbolo central da família Bridgerton e aparece frequentemente na decoração da casa?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Rosa Vermelha</alternativa>
+                <alternativa correta="nao">Lírio</alternativa>
+                <alternativa correta="nao">Girassol</alternativa>
+                <alternativa correta="sim">Glicínia (Wisteria)</alternativa>
+            </alternativas>
+        </questão>
 
-    <questao id="q4">
-        <pergunta>Na primeira temporada, por que Simon Basset, o Duque de Hastings, não queria ter filhos?</pergunta>
-        <alternativa id="A">Por uma promessa de vingança feita ao pai no leito de morte</alternativa>
-        <alternativa id="B">Por medo de transmitir uma doença genética</alternativa>
-        <alternativa id="C">Porque ele odiava crianças</alternativa>
-        <alternativa id="D">Para não perder sua herança e fortuna</alternativa>
-        <resposta>A</resposta>
-    </questao>
+        <questão>
+            <enunciado>Na segunda temporada, qual o nome da personagem que conquista o coração de Anthony Bridgerton?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="sim">Kate Sharma</alternativa>
+                <alternativa correta="nao">Edwina Sharma</alternativa>
+                <alternativa correta="nao">Marina Thompson</alternativa>
+                <alternativa correta="nao">Siena Rosso</alternativa>
+            </alternativas>
+        </questão>
 
-    <questao id="q5">
-        <pergunta>Diferente de suas contemporâneas, qual é o principal objetivo de Eloise Bridgerton na sociedade?</pergunta>
-        <alternativa id="A">Tornar-se a nova Diamante da temporada</alternativa>
-        <alternativa id="B">Casar-se com um príncipe estrangeiro</alternativa>
-        <alternativa id="C">Estudar, ler e conquistar independência feminina</alternativa>
-        <alternativa id="D">Abrir sua própria casa de modas</alternativa>
-        <resposta>C</resposta>
-    </questao>
+        <questão>
+            <enunciado>Qual é a principal obsessão da Rainha Charlotte ao longo das temporadas?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Aprender a cozinhar</alternativa>
+                <alternativa correta="sim">Descobrir a identidade de Lady Whistledown</alternativa>
+                <alternativa correta="nao">Viajar para a França</alternativa>
+                <alternativa correta="nao">Abolir o sistema de títulos de nobreza</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
 </quiz>
