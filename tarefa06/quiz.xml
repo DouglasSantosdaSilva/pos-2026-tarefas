@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quiz xmlns="http://quiz.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://quiz.org quiz.xsd"
+      versao="1">
+
+    <disciplina>História da Nobreza Inglesa (Série Bridgerton)</disciplina>
+    <professor>
+        <nome>Lady Whistledown</nome>
+        <matrícula>0012022</matrícula>
+    </professor>
+    <turma>Temporada de 1813</turma>
+    <data>01/04/2026</data>
+    
+    <questões>
+        <questão>
+            <enunciado>Quem é a verdadeira identidade por trás do pseudônimo Lady Whistledown?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Eloise Bridgerton</alternativa>
+                <alternativa correta="nao">Cressida Cowper</alternativa>
+                <alternativa correta="sim">Penelope Featherington</alternativa>
+                <alternativa correta="nao">Genevieve Delacroix</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual é o título de Simon Basset, o protagonista da primeira temporada?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Visconde de Bridgerton</alternativa>
+                <alternativa correta="sim">Duque de Hastings</alternativa>
+                <alternativa correta="nao">Conde de Dorset</alternativa>
+                <alternativa correta="nao">Barão de Featherington</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual flor é o símbolo central da família Bridgerton e aparece frequentemente na decoração da casa?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Rosa Vermelha</alternativa>
+                <alternativa correta="nao">Lírio</alternativa>
+                <alternativa correta="nao">Girassol</alternativa>
+                <alternativa correta="sim">Glicínia (Wisteria)</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Na segunda temporada, qual o nome da personagem que conquista o coração de Anthony Bridgerton?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="sim">Kate Sharma</alternativa>
+                <alternativa correta="nao">Edwina Sharma</alternativa>
+                <alternativa correta="nao">Marina Thompson</alternativa>
+                <alternativa correta="nao">Siena Rosso</alternativa>
+            </alternativas>
+        </questão>
+
+        <questão>
+            <enunciado>Qual é a principal obsessão da Rainha Charlotte ao longo das temporadas?</enunciado>
+            <pontuação>2.0</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Aprender a cozinhar</alternativa>
+                <alternativa correta="sim">Descobrir a identidade de Lady Whistledown</alternativa>
+                <alternativa correta="nao">Viajar para a França</alternativa>
+                <alternativa correta="nao">Abolir o sistema de títulos de nobreza</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>

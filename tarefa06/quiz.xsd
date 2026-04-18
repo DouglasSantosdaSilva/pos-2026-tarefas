@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:p="http://quiz.org" 
+        targetNamespace="http://quiz.org" 
+        elementFormDefault="qualified">
+
+    <element name="disciplina" type="string"/>
+    <element name="turma" type="string"/>
+    <element name="data" type="string"/>
+    <element name="nome" type="string"/>
+    <element name="matrícula" type="string"/> <element name="enunciado" type="string"/>
+    <element name="pontuação" type="decimal"/> <element name="alternativa">
+        <complexType>
+            <simpleContent>
+                <extension base="string">
+                    <attribute name="correta" use="required">
+                        <simpleType>
+                            <restriction base="string">
+                                <enumeration value="sim"/>
+                                <enumeration value="nao"/>
+                            </restriction>
+                        </simpleType>
+                    </attribute>
+                </extension>
+            </simpleContent>
+        </complexType>
+    </element>
+
+    <element name="professor">
+        <complexType>
+            <sequence>
+                <element ref="p:nome"/>
+                <element ref="p:matrícula" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="alternativas">
+        <complexType>
+            <sequence>
+                <element ref="p:alternativa" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="questão">
+        <complexType>
+            <sequence>
+                <element ref="p:enunciado"/>
+                <element ref="p:pontuação"/>
+                <element ref="p:alternativas"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="questões">
+        <complexType>
+            <sequence>
+                <element ref="p:questão" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="quiz">
+        <complexType>
+            <sequence>
+                <element ref="p:disciplina"/>
+                <element ref="p:professor"/>
+                <element ref="p:turma"/>
+                <element ref="p:data"/>
+                <element ref="p:questões"/>
+            </sequence>
+            <attribute name="versao" type="string" use="required"/>
+        </complexType>
+    </element>
+</schema>
