@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:p="http://imobiliaria.org" 
+    targetNamespace="http://imobiliaria.org" 
+    elementFormDefault="qualified"> <element name="nome" type="string"/>
+    <element name="email" type="string"/>
+    <element name="telefone" type="string"/>
+    <element name="descricao" type="string"/>
+    <element name="valor" type="decimal"/>
+    <element name="rua" type="string"/>
+    <element name="bairro" type="string"/>
+    <element name="cidade" type="string"/>
+    <element name="numero" type="integer"/>
+    <element name="numQuartos" type="integer"/>
+    <element name="numBanheiros" type="integer"/>
+    <element name="tamanho" type="decimal"/>
+
+    <element name="endereco"> <complexType>
+            <sequence>
+                <element ref="p:rua"/>
+                <element ref="p:bairro"/>
+                <element ref="p:cidade"/>
+                <element ref="p:numero" minOccurs="0"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="proprietario">
+        <complexType>
+            <sequence>
+               <element ref="p:nome"/>
+               <element ref="p:email" minOccurs="0"/>
+               <element ref="p:telefone" minOccurs="0" maxOccurs="2"/>
+            </sequence>
+        </complexType>
+    </element>
+ 
+    <element name="caracteristicas">
+        <complexType>
+            <sequence>
+                <element ref="p:tamanho"/>
+                <element ref="p:numQuartos"/>
+                <element ref="p:numBanheiros"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="imovel">
+        <complexType>
+            <sequence>
+                <element ref="p:descricao"/>
+                <element ref="p:proprietario"/>
+                <element ref="p:endereco"/>
+                <element ref="p:caracteristicas"/>
+                <element ref="p:valor"/>
+            </sequence>
+            <attribute name="id" type="integer"/>
+        </complexType>
+    </element>
+
+    <element name="imobiliaria">
+        <complexType>
+            <sequence>
+                <element ref="p:imovel" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
