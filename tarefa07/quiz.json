@@ -1,0 +1,64 @@
+{
+  "quiz": {
+    "versao": 1,
+    "disciplina": "História da Nobreza Inglesa (Série Bridgerton)",
+    "professor": {
+      "nome": "Lady Whistledown",
+      "matricula": "0012022"
+    },
+    "turma": "Temporada de 1813",
+    "data": "01/04/2026",
+    "questoes": [
+      {
+        "enunciado": "Quem é a verdadeira identidade por trás do pseudônimo Lady Whistledown?",
+        "pontuacao": 2.0,
+        "alternativas": [
+          { "texto": "Eloise Bridgerton", "correta": "nao" },
+          { "texto": "Cressida Cowper", "correta": "nao" },
+          { "texto": "Penelope Featherington", "correta": "sim" },
+          { "texto": "Genevieve Delacroix", "correta": "nao" }
+        ]
+      },
+      {
+        "enunciado": "Qual é o título de Simon Basset, o protagonista da primeira temporada?",
+        "pontuacao": 2.0,
+        "alternativas": [
+          { "texto": "Visconde de Bridgerton", "correta": "nao" },
+          { "texto": "Duque de Hastings", "correta": "sim" },
+          { "texto": "Conde de Dorset", "correta": "nao" },
+          { "texto": "Barão de Featherington", "correta": "nao" }
+        ]
+      },
+      {
+        "enunciado": "Qual flor é o símbolo central da família Bridgerton e aparece frequentemente na decoração da casa?",
+        "pontuacao": 2.0,
+        "alternativas": [
+          { "texto": "Rosa Vermelha", "correta": "nao" },
+          { "texto": "Lírio", "correta": "nao" },
+          { "texto": "Girassol", "correta": "nao" },
+          { "texto": "Glicínia (Wisteria)", "correta": "sim" }
+        ]
+      },
+      {
+        "enunciado": "Na segunda temporada, qual o nome da personagem que conquista o coração de Anthony Bridgerton?",
+        "pontuacao": 2.0,
+        "alternativas": [
+          { "texto": "Kate Sharma", "correta": "sim" },
+          { "texto": "Edwina Sharma", "correta": "nao" },
+          { "texto": "Marina Thompson", "correta": "nao" },
+          { "texto": "Siena Rosso", "correta": "nao" }
+        ]
+      },
+      {
+        "enunciado": "Qual é a principal obsessão da Rainha Charlotte ao longo das temporadas?",
+        "pontuacao": 2.0,
+        "alternativas": [
+          { "texto": "Aprender a cozinhar", "correta": "nao" },
+          { "texto": "Descobrir a identidade de Lady Whistledown", "correta": "sim" },
+          { "texto": "Viajar para a França", "correta": "nao" },
+          { "texto": "Abolir o sistema de títulos de nobreza", "correta": "nao" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "cardapio": {
+    "pratos": [
+      {
+        "id": 1,
+        "nome": "Frango à Parmegiana",
+        "descricao": "Peito de frango empanado e frito, coberto com molho de tomate e queijo derretido.",
+        "ingredientes": [
+          "Peito de frango", "Farinha de trigo", "Farinha de rosca", "Ovos", "Molho de tomate", "Queijo muçarela", "Queijo parmesão"
+        ],
+        "preco": {
+          "valor": 40.00,
+          "moeda": "BRL"
+        },
+        "tempoPreparo": "30 minutos",
+        "calorias": 750
+      },
+      {
+        "id": 2,
+        "nome": "Lasanha de Frango",
+        "descricao": "Camadas de massa fresca com frango desfiado cremoso e molho branco.",
+        "ingredientes": [
+          "Massa de lasanha", "Peito de frango desfiado", "Molho branco (bechamel)", "Milho verde", "Queijo muçarela", "Requeijão cremoso"
+        ],
+        "preco": {
+          "valor": 35.00,
+          "moeda": "BRL"
+        },
+        "tempoPreparo": "50 minutos",
+        "calorias": 880
+      },
+      {
+        "id": 3,
+        "nome": "Strogonoff de Frango",
+        "descricao": "Cubos de frango em molho cremoso de tomate e creme de leite, com cogumelos fatiados.",
+        "ingredientes": [
+          "Peito de frango", "Creme de leite", "Molho de tomate", "Champignon", "Mostarda", "Ketchup", "Cebola"
+        ],
+        "preco": {
+          "valor": 38.00,
+          "moeda": "BRL"
+        },
+        "tempoPreparo": "25 minutos",
+        "calorias": 620
+      },
+      {
+        "id": 4,
+        "nome": "Fricassê de Frango",
+        "descricao": "Frango desfiado mergulhado em creme de milho gratinado com queijo e batata palha.",
+        "ingredientes": [
+          "Frango desfiado", "Milho verde", "Creme de leite", "Requeijão cremoso", "Queijo muçarela", "Batata palha"
+        ],
+        "preco": {
+          "valor": 42.00,
+          "moeda": "BRL"
+        },
+        "tempoPreparo": "35 minutos",
+        "calorias": 710
+      },
+      {
+        "id": 5,
+        "nome": "Rondelli de Presunto e Queijo",
+        "descricao": "Massa fresca enrolada com recheio de presunto e queijo, servida ao molho rosé.",
+        "ingredientes": [
+          "Massa de lasanha fresca", "Presunto cozido", "Queijo muçarela", "Molho de tomate", "Creme de leite", "Queijo parmesão ralado"
+        ],
+        "preco": {
+          "valor": 45.00,
+          "moeda": "BRL"
+        },
+        "tempoPreparo": "30 minutos",
+        "calorias": 780
+      }
+    ]
+  }
+}
