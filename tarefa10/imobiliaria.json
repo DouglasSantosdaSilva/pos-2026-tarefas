@@ -1,0 +1,110 @@
+{
+  "imobiliaria": {
+    "imoveis": [
+      {
+        "id": 1,
+        "descricao": "Apartamento ventilado com armarios e area de servico no Tirol",
+        "proprietario": {
+          "nome": "Ricardo Fonseca",
+          "telefones": [
+            "84999887766",
+            "8432221100"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua Pastor Jeronimo Gueiros",
+          "bairro": "Tirol",
+          "cidade": "Natal"
+        },
+        "caracteristicas": {
+          "tamanho": 124,
+          "numQuartos": 3,
+          "numBanheiros": 2
+        },
+        "valor": 395000
+      },
+      {
+        "id": 2,
+        "descricao": "Edificio Galiza - Unidade funcional e central",
+        "proprietario": {
+          "nome": "Luciana Medeiros",
+          "telefones": [
+            "84988775544"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua Perito Jose Lourenco",
+          "bairro": "Lagoa Nova",
+          "cidade": "Natal"
+        },
+        "caracteristicas": {
+          "tamanho": 54,
+          "numQuartos": 2,
+          "numBanheiros": 2
+        },
+        "valor": 474900
+      },
+      {
+        "id": 3,
+        "descricao": "Lote amplo em regiao central de expansao",
+        "proprietario": {
+          "nome": "Marcos Lotes LTDA",
+          "telefones": []
+        },
+        "endereco": {
+          "rua": "Estrada de Acesso Central",
+          "bairro": "Centro",
+          "cidade": "Extremoz"
+        },
+        "caracteristicas": {
+          "tamanho": 800,
+          "numQuartos": 2,
+          "numBanheiros": 2
+        },
+        "valor": 80000
+      },
+      {
+        "id": 4,
+        "descricao": "Natal Spot - Studio moderno proximo a praia",
+        "proprietario": {
+          "nome": "Construtora RN",
+          "telefones": [
+            "8430004000"
+          ]
+        },
+        "endereco": {
+          "rua": "Avenida Engenheiro Roberto Freire",
+          "bairro": "Ponta Negra",
+          "cidade": "Natal"
+        },
+        "caracteristicas": {
+          "tamanho": 31,
+          "numQuartos": 1,
+          "numBanheiros": 1
+        },
+        "valor": 229217
+      },
+      {
+        "id": 5,
+        "descricao": "Edificio CTC - Salas comerciais mobiliadas",
+        "proprietario": {
+          "nome": "Pedro Adm de Bens",
+          "telefones": [
+            "84955551111"
+          ]
+        },
+        "endereco": {
+          "rua": "Rua Jaguarari",
+          "bairro": "Lagoa Nova",
+          "cidade": "Natal"
+        },
+        "caracteristicas": {
+          "tamanho": 300,
+          "numQuartos": 0,
+          "numBanheiros": 3
+        },
+        "valor": 900000
+      }
+    ]
+  }
+}
