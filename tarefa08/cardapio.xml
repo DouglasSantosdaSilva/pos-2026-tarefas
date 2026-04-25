@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cardapio>
+    <prato id="p001">
+        <nome>Frango à Parmegiana</nome>
+        <descricao>Peito de frango empanado e frito, coberto com molho de tomate e queijo derretido.</descricao>
+        <ingredientes>
+            <ingrediente>Peito de frango</ingrediente>
+            <ingrediente>Farinha de trigo</ingrediente>
+            <ingrediente>Farinha de rosca</ingrediente>
+            <ingrediente>Ovos</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Queijo parmesão</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL"> 40,00</preco>
+        <calorias>750 kcal</calorias>
+        <tempoPreparo>30 minutos</tempoPreparo>
+    </prato>
+    <prato id="p002">
+        <nome>Lasanha de Frango</nome>
+        <descricao>Camadas de massa fresca com frango desfiado cremoso e molho branco.</descricao>
+        <ingredientes>
+            <ingrediente>Massa de lasanha</ingrediente>
+            <ingrediente>Peito de frango desfiado</ingrediente>
+            <ingrediente>Molho branco (bechamel)</ingrediente>
+            <ingrediente>Milho verde</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Requeijão cremoso</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL"> 35,00</preco>
+        <calorias>880 kcal</calorias>
+        <tempoPreparo>50 minutos</tempoPreparo>
+    </prato>
+    <prato id="p003">
+        <nome>Strogonoff de Frango</nome>
+        <descricao>Cubos de frango em molho cremoso de tomate e creme de leite, com cogumelos fatiados.</descricao>
+        <ingredientes>
+            <ingrediente>Peito de frango</ingrediente>
+            <ingrediente>Creme de leite</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Champignon</ingrediente>
+            <ingrediente>Mostarda</ingrediente>
+            <ingrediente>Ketchup</ingrediente>
+            <ingrediente>Cebola</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL"> 38,00</preco>
+        <calorias>620 kcal</calorias>
+        <tempoPreparo>25 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="p004">
+        <nome>Fricassê de Frango</nome>
+        <descricao>Frango desfiado mergulhado em creme de milho gratinado com queijo e batata palha.</descricao>
+        <ingredientes>
+            <ingrediente>Frango desfiado</ingrediente>
+            <ingrediente>Milho verde</ingrediente>
+            <ingrediente>Creme de leite</ingrediente>
+            <ingrediente>Requeijão cremoso</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Batata palha</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL"> 42,00</preco>
+        <calorias>710 kcal</calorias>
+        <tempoPreparo>35 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="p005">
+        <nome>Rondelli de Presunto e Queijo</nome>
+        <descricao>Massa fresca enrolada com recheio de presunto e queijo, servida ao molho rosé.</descricao>
+        <ingredientes>
+            <ingrediente>Massa de lasanha fresca</ingrediente>
+            <ingrediente>Presunto cozido</ingrediente>
+            <ingrediente>Queijo muçarela</ingrediente>
+            <ingrediente>Molho de tomate</ingrediente>
+            <ingrediente>Creme de leite</ingrediente>
+            <ingrediente>Queijo parmesão ralado</ingrediente>
+        </ingredientes>
+        <preco moeda="BRL"> 45,00</preco>
+        <calorias>780 kcal</calorias>
+        <tempoPreparo>30 minutos</tempoPreparo>
+    </prato>
+</cardapio>
