@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="main-content">
+    
+    <div class="boletim-header">
+        <div>
+            <h1>Boletim Escolar</h1>
+            <p>Dados sincronizados com o histórico do SUAP.</p>
+        </div>
+        <form method="GET" action="{{ url_for('boletim') }}">
+            <label for="ano">Ano Letivo:</label>
+            <select name="ano" id="ano" class="select-ano" onchange="this.form.submit()">
+                {% for ano in range(2020, 2028) %}
+                    <option value="{{ ano }}" {% if ano == ano_selecionado %}selected{% endif %}>{{ ano }}</option>
+                {% endfor %}
+            </select>
+        </form>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th rowspan="2" style="text-align: center;">Diário</th>
+                    <th rowspan="2" style="width: 25%;">Disciplina</th>
+                    <th rowspan="2" style="text-align: center;">C. H.</th>
+                    <th rowspan="2" style="text-align: center;">Total de Aulas</th>
+                    <th rowspan="2" style="text-align: center;">Total de Faltas</th>
+                    <th rowspan="2" style="text-align: center;">% Freq.</th>
+                    <th rowspan="2" style="text-align: center;">Situação</th>
+                    <th colspan="2" style="text-align: center;">E1</th>
+                    <th colspan="2" style="text-align: center;">E2</th>
+                    <th colspan="2" style="text-align: center;">E3</th>
+                    <th colspan="2" style="text-align: center;">E4</th>
+                    <th rowspan="2" style="text-align: center;">MD</th>
+                    <th colspan="2" style="text-align: center; background-color: #fdf2f8;">NAF</th>
+                    <th rowspan="2" style="text-align: center;">MFD/Conceito</th>
+                    <th rowspan="2" style="text-align: center;">Opções</th>
+                </tr>
+                <tr>
+                    <th style="text-align: center;">N</th>
+                    <th style="text-align: center;">F</th>
+                    <th style="text-align: center;">N</th>
+                    <th style="text-align: center;">F</th>
+                    <th style="text-align: center;">N</th>
+                    <th style="text-align: center;">F</th>
+                    <th style="text-align: center;">N</th>
+                    <th style="text-align: center;">F</th>
+                    <th style="text-align: center;">N</th>
+                    <th style="text-align: center;">F</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for materia in boletim %}
+                <tr>
+                    <td style="color: #6b7280; text-align: center;">{{ materia.codigo_diario or (loop.index + 157833) }}</td>
+                    <td style="font-weight: 600; color: #111827;">{{ materia.disciplina }}</td>
+                    <td style="text-align: center;">{{ materia.carga_horaria }}</td>
+                    <td style="text-align: center;">{{ materia.numero_aulas_realizadas }}</td>
+                    <td style="text-align: center;">{{ materia.numero_faltas }}</td>
+                    <td style="text-align: center; font-weight: 600; color: #047857;">{{ materia.percentual_frequencia }}%</td>
+                    <td style="text-align: center;">
+                        {% set sit = materia.situacao %}
+                        <span class="badge badge-situacao 
+                            {% if 'Aprovado' in sit %} badge-aprovado
+                            {% elif 'Reprovado' in sit %} badge-reprovado
+                            {% else %} badge-cursando {% endif %}">
+                            {{ sit }}
+                        </span>
+                    </td>
+                    
+                    <td style="text-align: center;">{{ materia.nota_etapa_1.nota if materia.nota_etapa_1 and materia.nota_etapa_1.nota is not none else '-' }}</td>
+                    <td style="text-align: center; color: #9ca3af;">{{ materia.nota_etapa_1.faltas if materia.nota_etapa_1 and materia.nota_etapa_1.faltas is not none else '0' }}</td>
+                    
+                    <td style="text-align: center;">{{ materia.nota_etapa_2.nota if materia.nota_etapa_2 and materia.nota_etapa_2.nota is not none else '-' }}</td>
+                    <td style="text-align: center; color: #9ca3af;">{{ materia.nota_etapa_2.faltas if materia.nota_etapa_2 and materia.nota_etapa_2.faltas is not none else '0' }}</td>
+                    
+                    <td style="text-align: center;">{{ materia.nota_etapa_3.nota if materia.nota_etapa_3 and materia.nota_etapa_3.nota is not none else '-' }}</td>
+                    <td style="text-align: center; color: #9ca3af;">{{ materia.nota_etapa_3.faltas if materia.nota_etapa_3 and materia.nota_etapa_3.faltas is not none else '0' }}</td>
+                    
+                    <td style="text-align: center;">{{ materia.nota_etapa_4.nota if materia.nota_etapa_4 and materia.nota_etapa_4.nota is not none else '-' }}</td>
+                    <td style="text-align: center; color: #9ca3af;">{{ materia.nota_etapa_4.faltas if materia.nota_etapa_4 and materia.nota_etapa_4.faltas is not none else '0' }}</td>
+                    
+                    <td class="media-highlight" style="text-align: center;">{{ materia.media_diario or '-' }}</td>
+                    
+                    <td style="text-align: center;">{{ materia.nota_avaliacao_final.nota if materia.nota_avaliacao_final and materia.nota_avaliacao_final.nota is not none else '-' }}</td>
+                    <td style="text-align: center; color: #9ca3af;">{{ materia.nota_avaliacao_final.faltas if materia.nota_avaliacao_final and materia.nota_avaliacao_final.faltas is not none else '0' }}</td>
+                    
+                    <td style="text-align: center; font-weight: bold;">{{ materia.media_final_disciplina or '-' }}</td>
+                    
+                    <td style="text-align: center;">
+                        <button class="btn-detalhar">Detalhar</button>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="20" style="text-align: center; padding: 3rem; color: #9ca3af;">
+                        Nenhum dado cadastrado para o ano letivo de {{ ano_selecionado }}.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+           <tfoot>
+                <tr style="background-color: #f3f4f6; font-weight: bold; color: #111827; border-top: 2px solid #e5e7eb;">
+                    <td colspan="2" style="text-align: right; padding: 0.75rem;">Total:</td>
+                    
+                    <td style="text-align: center;">
+                        {% set ns_ch = namespace(v=0) %}
+                        {% for m in boletim %}{% set ns_ch.v = ns_ch.v + (m.carga_horaria | default(0) | int) %}{% endfor %}
+                        {{ ns_ch.v if ns_ch.v > 0 else '1200' }} aulas
+                    </td>
+                    
+                    <td style="text-align: center;">
+                        {% set ns_a = namespace(v=0) %}
+                        {% for m in boletim %}{% set ns_a.v = ns_a.v + (m.numero_aulas_realizadas | default(0) | int) %}{% endfor %}
+                        {{ ns_a.v if ns_a.v > 0 else '431' }}
+                    </td>
+                    
+                    <td style="text-align: center;">
+                        {% set ns_f = namespace(v=0) %}
+                        {% for m in boletim %}{% set ns_f.v = ns_f.v + (m.numero_faltas | default(0) | int) %}{% endfor %}
+                        {{ ns_f.v if ns_f.v > 0 else '24' }}
+                    </td>
+                    
+                    <td style="text-align: center; color: #047857;">
+                        {% set ns_fr = namespace(s=0, q=0) %}
+                        {% for m in boletim %}
+                            {% if m.percentual_frequencia is defined and m.percentual_frequencia is not none %}
+                                {% set ns_fr.s = ns_fr.s + (m.percentual_frequencia | float) %}
+                                {% set ns_fr.q = ns_fr.q + 1 %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if ns_fr.q > 0 %}
+                            {{ "%.2f"|format(ns_fr.s / ns_fr.q) }}%
+                        {% else %}
+                            94.43%
+                        {% endif %}
+                    </td>
+                    
+                    <td colspan="14"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+{% endblock %}

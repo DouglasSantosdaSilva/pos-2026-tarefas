@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align: center; padding: 3rem 1rem; max-width: 800px; margin: 0 auto;">
+    <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: #111827;">
+        Bem-vindo ao Portal do Aluno Simplificado
+    </h1>
+    <p style="font-size: 1.125rem; color: #6b7280; margin-bottom: 2.5rem; line-height: 1.6;">
+        Consulte suas notas, faltas, histórico escolar e dados cadastrais de forma rápida e com um design limpo conectado diretamente ao SUAP.
+    </p>
+
+    {% if not user_data %}
+    <a href="{{ url_for('login') }}" class="btn btn-primary-large">
+        Autenticar com o SUAP
+    </a>
+    {% else %}
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+        <a href="{{ url_for('perfil') }}" class="btn btn-primary-large" style="font-size:1rem; padding: 0.75rem 1.5rem;">Ver Meu Perfil</a>
+        <a href="{{ url_for('boletim') }}" class="btn btn-white" style="border: 1px solid #d1d5db; font-size:1rem; padding: 0.75rem 1.5rem;">Acessar Boletim</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

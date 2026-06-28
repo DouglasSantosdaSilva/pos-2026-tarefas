@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card" style="max-width: 900px; margin: 0 auto;">
+    <div class="profile-header">
+        <div>
+            {% if dados.url_foto_150x200 %}
+                <img class="profile-pic" src="{{ suap_url }}{{ dados.url_foto_150x200 }}" alt="Foto">
+            {% else %}
+                <div class="profile-pic" style="background:#065f46; display:flex; align-items:center; justify-center; color:white; font-size:2rem; font-weight:bold; height:150px; width:120px; text-align:center; line-height:150px;">SUAP</div>
+            {% endif %}
+        </div>
+        <div>
+            <h1 style="font-size: 2rem; margin: 0;">{{ dados.nome_usual }}</h1>
+            <p style="opacity: 0.9; font-family: monospace; margin-top: 0.25rem;">Matrícula: {{ dados.matricula }}</p>
+            <span class="badge badge-vinculo">{{ dados.tipo_vinculo }}</span>
+        </div>
+    </div>
+
+    <div class="profile-body">
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem; border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem;">Informações Gerais</h3>
+        <dl class="grid-2">
+            <div class="info-group">
+                <dt>Nome Completo</dt>
+                <dd>{{ dados.nome_completo }}</dd>
+                <dd>{{ dados.nome_usual }}</dd>
+            </div>
+            <div class="info-group">
+                <dt>E-mail Institucional</dt>
+                <dd>{{ dados.email }}</dd>
+            </div>
+            <div class="info-group">
+                <dt>Curso</dt>
+                <dd>{{ dados.vinculo.curso }}</dd>
+            </div>
+            <div class="info-group">
+                <dt>Campus</dt>
+                <dd>{{ dados.vinculo.campus }}</dd>
+            </div>
+        </dl>
+    </div>
+</div>
+{% endblock %}

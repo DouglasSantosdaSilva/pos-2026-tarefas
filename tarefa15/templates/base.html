@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente SUAP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                <a href="{{ url_for('index') }}" class="nav-logo">SUAP <span>Client</span></a>
+                {% if user_data %}
+                <div class="nav-links">
+                    <a href="{{ url_for('index') }}" class="nav-link">Perfil</a>
+                    <a href="{{ url_for('boletim') }}" class="nav-link">Boletim</a>
+                </div>
+                {% endif %}
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                {% if user_data %}
+                    <div class="nav-user-info">
+                        {% if user_data.avatar %}
+                            <img class="nav-avatar" src="{{ user_data.avatar }}" alt="Avatar">
+                        {% endif %}
+                        <div class="nav-user-text">
+                            <span class="nav-username">{{ user_data.nome }}</span>
+                            <span class="nav-matricula">{{ user_data.matricula }}</span>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('logout') }}" class="btn btn-danger">Sair</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}" class="btn btn-white">Entrar com SUAP</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        &copy; 2026 - Cliente SUAP Flask. Desenvolvido de forma modular e elegante.
+    </footer>
+</body>
+</html>
